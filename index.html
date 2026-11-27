@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4ec">
+  <meta name="description" content="Wedding celebration of Alexander Makanjira and Tamandani Simbeye — 28 November 2026.">
+  <title>Alexander &amp; Tamandani | Wedding Celebration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="invitation-gate" id="invitationGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-card">
+      <div class="gate-seal">A <span>&amp;</span> T</div>
+      <p class="eyebrow">YOU ARE CORDIALLY INVITED</p>
+      <h2 id="gateTitle">A celebration<br><em>of forever</em></h2>
+      <div class="gate-rule">✦ &nbsp; 28 NOVEMBER 2026 &nbsp; ✦</div>
+      <p class="gate-copy">Alexander Makanjira<br><span>&amp;</span><br>Tamandani Simbeye</p>
+      <button class="primary-button" id="openInvitation">OPEN YOUR INVITATION <span>✧</span></button>
+      <p class="gate-foot">MADE WITH LOVE · MALAWI</p>
+    </div>
+  </div>
+  <button class="music-toggle" id="musicToggle" aria-label="Play background music" title="Play background music"><span class="music-note">♫</span><span class="music-label">PLAY MUSIC</span></button>
+  <audio id="weddingMusic" loop preload="none">
+    <source src="audio/original-wedding-instrumental.mp3" type="audio/wav">
+  </audio>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <div class="top-line"></div>
+  <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="#">A <span>&amp;</span> T</a>
+      <span class="nav-note">A CELEBRATION OF LOVE</span>
+      <a class="nav-programme" href="#programme">THE DAY'S PROGRAMME</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">TOGETHER WITH THEIR FAMILIES</p>
+      <h1>Alexander <span>&amp;</span><br>Tamandani</h1>
+      <div class="ornament"><span></span> ✦ <span></span></div>
+      <p class="invite">Joyfully invite you to celebrate<br>their wedding day</p>
+      <p class="date">SATURDAY <b>•</b> 28 NOVEMBER 2026</p>
+      <a class="primary-button" href="#details">VIEW THE CELEBRATION</a>
+    </div>
+    <div class="hero-bottom">WITH LOVE, WE BEGIN FOREVER</div>
+  </header>
+
+  <main>
+    <section class="intro section">
+      <p class="eyebrow">TWO HEARTS, ONE JOURNEY</p>
+      <h2>A day to remember.<br><em>A love to celebrate.</em></h2>
+      <p class="intro-copy">With grateful hearts, Alexander and Tamandani would be delighted to have you share in the joy of their special day.</p>
+    </section>
+
+    <section class="gallery section" aria-label="Couple photo slideshow">
+      <div class="section-heading">
+        <p class="eyebrow">OUR MOMENTS</p>
+        <h2>Captured in love</h2>
+      </div>
+      <div class="slideshow">
+        <div class="slide active"><img src="images/photo1.jpg" alt="Alexander and Tamandani photograph 1"><div class="photo-placeholder"><span>PHOTO 1</span><small>Add the couple's first photograph as <b>images/photo1.jpg</b></small></div></div>
+        <div class="slide"><img src="images/photo2.jpg" alt="Alexander and Tamandani photograph 2"><div class="photo-placeholder"><span>PHOTO 2</span><small>Add the couple's second photograph as <b>images/photo2.jpg</b></small></div></div>
+        <div class="slide"><img src="images/photo3.jpg" alt="Alexander and Tamandani photograph 3"><div class="photo-placeholder"><span>PHOTO 3</span><small>Alexander and Tamandani</small></div></div>
+        <div class="slide"><img src="images/photo4.jpg" alt="Alexander and Tamandani photograph 4"><div class="photo-placeholder"><span>PHOTO 4</span><small>Alexander and Tamandani</small></div></div>
+        <button class="slide-arrow prev" aria-label="Previous photo">&#10094;</button>
+        <button class="slide-arrow next" aria-label="Next photo">&#10095;</button>
+        <div class="dots"><button class="dot active" aria-label="Show photo 1"></button><button class="dot" aria-label="Show photo 2"></button><button class="dot" aria-label="Show photo 3"></button><button class="dot" aria-label="Show photo 4"></button></div>
+      </div>
+      <p class="gallery-note">A few favourite moments from the couple’s story.</p>
+    </section>
+
+
+    <section class="film-section section" aria-label="The couple's wedding video">
+      <div class="film-inner">
+        <p class="eyebrow">A LITTLE MORE OF OUR STORY</p>
+        <h2>Love, in <em>motion.</em></h2>
+        <p class="film-copy">Relive a few beautiful moments of Alexander and Tamandani's journey together.</p>
+        <div class="film-frame">
+          <div class="film-topline"><span> ALEXANDER &amp; TAMANDANI </span><span>OUR STORY · 2026</span></div>
+          <video controls playsinline preload="metadata" poster="images/photo1.jpg">
+            <source src="video/alexander-tamandani-highlights-github.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+          <div class="film-caption"><span>✦</span> A MOMENT TO TREASURE <span>✦</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <p class="eyebrow">COUNTING DOWN TO FOREVER</p>
+      <h2>Until we say “I do”</h2>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">--</strong><span>DAYS</span></div>
+        <div><strong id="hours">--</strong><span>HOURS</span></div>
+        <div><strong id="minutes">--</strong><span>MINUTES</span></div>
+        <div><strong id="seconds">--</strong><span>SECONDS</span></div>
+      </div>
+    </section>
+
+    <section class="details section" id="details">
+      <div class="section-heading">
+        <p class="eyebrow">PLEASE JOIN US</p>
+        <h2>The celebration</h2>
+      </div>
+      <div class="event-grid">
+        <article class="event-card">
+          <div class="event-icon">✧</div>
+          <p class="eyebrow">THE CEREMONY</p>
+          <h3>Wedding Officiation</h3>
+          <p class="event-venue">Christ Embassy Excel Centre</p>
+          <p class="event-location">Area 49, near PLFM</p>
+          <div class="event-time">08:00 AM</div>
+          <p class="event-date">Saturday, 28 November 2026</p>
+          <a class="map-button" href="https://share.google/LYzVTqCZaI2UFdZ2o" target="_blank" rel="noopener noreferrer">GET DIRECTIONS <span>↗</span></a>
+        </article>
+        <article class="event-card featured">
+          <div class="event-icon">✧</div>
+          <p class="eyebrow">LET'S CELEBRATE</p>
+          <h3>Wedding Reception</h3>
+          <p class="event-venue">Elian and Evelyn Events Centre</p>
+          <p class="event-location">Area 49</p>
+          <div class="event-time">01:30 PM</div>
+          <p class="event-date">Saturday, 28 November 2026</p>
+          <a class="map-button" href="https://share.google/9WmIG0BUZfybzIgqW" target="_blank" rel="noopener noreferrer">GET DIRECTIONS <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="programme section" id="programme">
+      <div class="section-heading">
+        <p class="eyebrow">THE DAY, BEAUTIFULLY PLANNED</p>
+        <h2>Wedding programme</h2>
+        <p class="programme-intro">A few moments that will make this day unforgettable.</p>
+      </div>
+      <div class="programme-list">
+        <article class="programme-item"><span class="programme-time">08:00 AM</span><span class="programme-line"></span><div><h3>Wedding officiation</h3><p>Christ Embassy Excel Centre · Area 49</p></div></article>
+        <article class="programme-item"><span class="programme-time">01:30 PM</span><span class="programme-line"></span><div><h3>Wedding reception</h3><p>Elian and Evelyn Events Centre · Area 49</p></div></article>
+        <article class="programme-item"><span class="programme-time">TO BE ANNOUNCED</span><span class="programme-line"></span><div><h3>Celebration &amp; festivities</h3><p>Further programme details will be shared by the couple.</p></div></article>
+      </div>
+    </section>
+
+    <section class="memories-section section" id="guestbook">
+      <div class="section-heading">
+        <p class="eyebrow">LEAVE A LITTLE LOVE</p>
+        <h2>Guestbook &amp; memories</h2>
+        <p class="programme-intro">Share a blessing or a favourite snapshot for Alexander and Tamandani.</p>
+      </div>
+      <div class="memory-grid">
+        <form class="guestbook-form" id="guestbookForm">
+          <label for="guestName">Your name</label>
+          <input id="guestName" name="guestName" maxlength="70" placeholder="e.g. Mary Banda" required>
+          <label for="guestMessage">Your wishes</label>
+          <textarea id="guestMessage" name="guestMessage" rows="4" maxlength="500" placeholder="Write a heartfelt message..." required></textarea>
+          <button class="primary-button" type="submit">SEND YOUR WISHES ✦</button>
+          <p class="local-note">This preview stores messages in this browser only. Connect a shared database or form service to collect wishes from all guests.</p>
+        </form>
+        <div class="guestbook-wall">
+          <div class="wall-heading"><span>✧</span> WISHES FOR THE COUPLE <span>✧</span></div>
+          <div id="guestMessages" class="guest-messages"><p class="empty-wall">Be the first to leave a blessing.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="upload-section section" id="guest-photos">
+      <div class="section-heading">
+        <p class="eyebrow">THROUGH YOUR LENS</p>
+        <h2>Share your moments</h2>
+        <p class="programme-intro">Share your favourite wedding memories. Photos you upload will be saved online and appear here for everyone to enjoy.</p>
+      </div>
+      <label class="upload-drop" for="guestPhotoInput">
+        <span class="upload-icon">＋</span>
+        <strong>ADD YOUR WEDDING PHOTOS</strong>
+        <small>JPG, PNG or WEBP · Up to 10 MB per photo · Select multiple images</small>
+        <input id="guestPhotoInput" type="file" accept="image/jpeg,image/png,image/webp,image/gif" multiple>
+      </label>
+      <p class="gallery-upload-status" id="galleryUploadStatus" role="status" aria-live="polite">Connect to the wedding photo gallery to upload and view shared memories.</p>
+      <div class="upload-preview" id="uploadPreview" aria-live="polite"></div>
+      <div class="shared-gallery-heading"><span>✧</span> SHARED WEDDING GALLERY <span>✧</span></div>
+      <div class="shared-gallery" id="sharedGallery" aria-live="polite"><p class="empty-wall">Loading wedding memories…</p></div>
+      <p class="local-note">By uploading, you agree that your photo will be visible to anyone who can access this wedding website.</p>
+    </section>
+
+    <section class="closing section">
+      <div class="ornament"><span></span> ✦ <span></span></div>
+      <p class="eyebrow">YOUR PRESENCE IS OUR PRESENT</p>
+      <h2>We can't wait<br><em>to celebrate with you.</em></h2>
+      <p>With love, Alexander &amp; Tamandani</p>
+      <button class="share-button" id="shareButton">SHARE THIS INVITATION</button>
+      <button class="celebrate-button" id="celebrateButton">SEND THE COUPLE SOME SPARKLE ✦</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-monogram">A <span>&amp;</span> T</div>
+    <p>MADE WITH LOVE · 28 NOVEMBER 2026</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
